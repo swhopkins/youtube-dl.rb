@@ -84,14 +84,6 @@ module YoutubeDL
 
     def banned_keys
       [
-        :get_url,
-        :get_title,
-        :get_id,
-        :get_thumbnail,
-        :get_description,
-        :get_duration,
-        :get_filename,
-        :get_format
       ]
     end
 
