@@ -24,8 +24,10 @@ module YoutubeDL
     # @param command [String] command switches to run
     # @param executable_path [String] executable to run. Defaults to usable youtube-dl.
     # @return [Terrapin::CommandLine] initialized Terrapin instance
+    # curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o yt-dlp
+    # chmod a+rx yt-dlp
     def terrapin_line(command, executable_path = nil)
-      executable_path = executable_path_for('youtube-dl') if executable_path.nil?
+      executable_path = executable_path_for('yt-dlp') if executable_path.nil?
       Terrapin::CommandLine.new(executable_path, command)
     end
 
