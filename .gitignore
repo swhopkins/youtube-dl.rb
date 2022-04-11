@@ -13,3 +13,6 @@
 *.a
 mkmf.log
 *nope.avi*
+
+.DS_Store
+/.idea
